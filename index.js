@@ -6,7 +6,7 @@ app.use(express.json());
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-const port = 5000 || process.env.PORT
+const port = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
   res.send('Derana News Assignment Backend API Running');
