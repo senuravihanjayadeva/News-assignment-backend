@@ -5,7 +5,7 @@ app.use(cors());
 app.use(express.json());
 const mongoose = require('mongoose');
 
-const port = 5000 | process.env.PORT
+const port = 5000 || process.env.PORT
 
 app.get('/', (req, res) => {
   res.send('Derana News Assignment Backend API Running');
